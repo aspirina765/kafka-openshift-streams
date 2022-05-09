@@ -51,7 +51,9 @@ TO BE PROVIDED
 
 ## Running the tests
 
-Run the following command from the top level of the directory in which you installed the demonstration code.
+Make sure that you've properly configured the `.env` file with the values that are particular to your running instance of OpenShift Kafka Streams.
+
+Then, run the following command from the top level of the directory in which you installed the demonstration code.
 
 `mvn test`
 
