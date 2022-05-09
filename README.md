@@ -55,3 +55,18 @@ Run the following command from the top level of the directory in which you insta
 
 `mvn test`
 
+Upon success, you'll get output similar to the following:
+
+```console
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  19.510 s
+[INFO] Finished at: 2022-05-09T19:08:02Z
+[INFO] ------------------------------------------------------------------------
+```
+
