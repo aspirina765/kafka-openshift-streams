@@ -33,11 +33,15 @@ KAFKA_STREAM_BOOTSTRAP_SERVER=<KAFKA_STREAMS_BOOTSTRAP_SERVER_URL>
 * `<SERVICE_ACCOUNT_CLIENT_ID>` is the Client ID created when you created the OpenShift Service Account bound to the stream.
 * `<SERVICE_ACCOUNT_CLIENT_SECRET>` is the Client Secret created when you created the OpenShift Service Account bound to the stream.
 * `<KAFKA_STREAMS_BOOTSTRAP_SERVER_URL>` is the URL of the Kafka Bootstrap which is created when you create the instance of OpenShift Kafka Streams.
-* 
+
 You will substitute the values between the `<...>` brackets with values particular to your instance of OpenShift Kafka Streams.
 
 ## Building the code
 TO BE PROVIDED
 
 ## Running the tests
-TO BE PROVIDED
+
+Run the following command from the top level of the directory in which you installed the demonstration code.
+
+`mvn test`
+
