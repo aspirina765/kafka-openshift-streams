@@ -10,7 +10,7 @@ A project that demonstrates how to run the Apache Kafka Client against a Kafka b
 ## Setting up a Kafka instance and a Kafka topic in Red Hat Open Shift
 The first thing you will need to do is build a running instance of Kafka Streams on Red Hat OpenShift.
 
-Follow the directions described in the interactive QuickStart document, [Getting started with Red Hat OpenShift Streams for Apache](https://console.redhat.com/beta/application-services/learning-resources?quickstart=getting-started) to getting an instance of Kafka Streams running on OpenShift.
+Follow the directions described in the interactive QuickStart document, [Getting started with Red Hat OpenShift Streams for Apache](https://console.redhat.com/beta/application-services/learning-resources?quickstart=getting-started) in order to get an instance of Kafka Streams running in OpenShift.
 
 You will need retieve four fields of information that will be created when you get OpenShift Kafka Streams up and running. The information you will need is:
 
