@@ -1,15 +1,19 @@
 package com.demo.kafka;
 
+import io.github.cdimascio.dotenv.Dotenv;
 import org.apache.kafka.clients.admin.TopicListing;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class SimpleProducerConsumerTest {
-    private final String fixedTopicName = "mycooltopic";
+    private String fixedTopicName;
+    private Dotenv dotenv = null;
     @BeforeClass
     public void before_class() throws Exception {
         //String topicName = KafkaTopicHelper.createRandomTopic();
+        dotenv = Dotenv.configure().load();
+        fixedTopicName = dotenv.get("KAFKA_STREAM_TEST_TOPIC", "mytopic");
     }
 
     @Test
