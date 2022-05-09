@@ -12,7 +12,7 @@ The first thing you will need to do is build a running instance of Kafka Streams
 
 Follow the directions described in the interactive QuickStart document, [Getting started with Red Hat OpenShift Streams for Apache](https://console.redhat.com/beta/application-services/learning-resources?quickstart=getting-started) in order to get an instance of Kafka Streams running in OpenShift.
 
-You will need retieve four fields of information that will be created when you get OpenShift Kafka Streams up and running. The information you will need is:
+You will need retieve four fields of information that will be created when you get OpenShift Streams up and running. The information you will need is:
 
 * The Kafka **topic** name that you created in Open Shift
 * The **URL** of the Kafka Bootstrap Server
@@ -40,10 +40,10 @@ KAFKA_STREAM_BOOTSTRAP_SERVER=<KAFKA_STREAMS_BOOTSTRAP_SERVER_URL>
 
 **WHERE**
 
-* `<TOPIC_NAME_ON_KAFKA_STREAMS>` is the name of topic where messages will be produced to and consumed from. The topic must be created within in Red Hat OpenShift Kafka Streams.
+* `<TOPIC_NAME_ON_KAFKA_STREAMS>` is the name of topic where messages will be produced to and consumed from. The topic must be created within in Red Hat OpenShift Streams.
 * `<SERVICE_ACCOUNT_CLIENT_ID>` is the Client ID created when you created the OpenShift Service Account bound to the stream.
 * `<SERVICE_ACCOUNT_CLIENT_SECRET>` is the Client Secret created when you created the OpenShift Service Account bound to the stream.
-* `<KAFKA_STREAMS_BOOTSTRAP_SERVER_URL>` is the URL of the Kafka Bootstrap which is created when you create the instance of OpenShift Kafka Streams.
+* `<KAFKA_STREAMS_BOOTSTRAP_SERVER_URL>` is the URL of the Kafka Bootstrap which is created when you create the instance of OpenShift Streams.
 
 **EXAMPLE:**
 
@@ -55,14 +55,14 @@ KAFKA_STREAM_PWD=6823f7bd-649b-4029-8a1c-8713axxx918b
 KAFKA_STREAM_BOOTSTRAP_SERVER=my-first-k-c-skxxxt--m--nhc-fna.bf2.kafka.rhcloud.com:443
 ```
 
-You will substitute the values between the `<...>` brackets with values particular to your instance of OpenShift Kafka Streams.
+You will substitute the values between the `<...>` brackets with values particular to your instance of OpenShift Streams.
 
 ## Building the code
 TO BE PROVIDED
 
 ## Running the tests
 
-Make sure that you've properly configured the `.env` file with the values that are particular to your running instance of OpenShift Kafka Streams.
+Make sure that you've properly configured the `.env` file with the values that are particular to your running instance of OpenShift Streams.
 
 Then, run the following command from the top level of the directory in which you installed the demonstration code.
 
