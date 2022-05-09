@@ -34,6 +34,16 @@ KAFKA_STREAM_BOOTSTRAP_SERVER=<KAFKA_STREAMS_BOOTSTRAP_SERVER_URL>
 * `<SERVICE_ACCOUNT_CLIENT_SECRET>` is the Client Secret created when you created the OpenShift Service Account bound to the stream.
 * `<KAFKA_STREAMS_BOOTSTRAP_SERVER_URL>` is the URL of the Kafka Bootstrap which is created when you create the instance of OpenShift Kafka Streams.
 
+**EXAMPLE:**
+
+```properties
+DOTENV_TEST_MESSAGE=PING
+KAFKA_STREAM_TEST_TOPIC=mytopic
+KAFKA_STREAM_USER_NAME=srvc-acct-7axxx530-e8fe-471c-bb3d-aa005020d911
+KAFKA_STREAM_PWD=6823f7bd-649b-4029-8a1c-8713axxx918b
+KAFKA_STREAM_BOOTSTRAP_SERVER=my-first-k-c-skxxxt--m--nhc-fna.bf2.kafka.rhcloud.com:443
+```
+
 You will substitute the values between the `<...>` brackets with values particular to your instance of OpenShift Kafka Streams.
 
 ## Building the code
