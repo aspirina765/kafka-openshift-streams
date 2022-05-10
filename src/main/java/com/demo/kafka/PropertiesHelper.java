@@ -47,14 +47,19 @@ public class PropertiesHelper {
     }
 
     static Properties addSecurityProperties(Properties props) throws PropertiesConfigurationException {
+        // use the private method that ensures the required environment variables are present
         testForSecurityProperties();
+        // create an instance of java-dotenv to retrieve the environment variables
         Dotenv env = getDotEnv();
-        //override the local Kafka instance with the Kafka Stream instance
+        //override the local Kafka instance settings with the Kafka Stream instance
         props.put("bootstrap.servers", env.get("KAFKA_STREAM_BOOTSTRAP_SERVER"));
+        // add the security settings
         props.put("security.protocol", "SASL_SSL");
         props.put("sasl.mechanism", "PLAIN");
+        // create the connection string, getting username and pwd from env vars
         props.put("sasl.jaas.config", PlainLoginModule.class.getName() + " required username=\""
                 + env.get("KAFKA_STREAM_USER_NAME") + "\" password=\"" + env.get("KAFKA_STREAM_PWD") + "\";");
+        // return the amended properties collection
         return props;
     }
 
